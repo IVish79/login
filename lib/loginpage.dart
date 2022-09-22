@@ -94,7 +94,7 @@ class _LoginPageState extends State<loginpage> {
             Container(
               child: Text(
                 "Sign In",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
             Padding(
@@ -109,7 +109,7 @@ class _LoginPageState extends State<loginpage> {
                     filled: true,
                     //errorText: "sdf",
                     labelText: "Email or Mobile No.",
-                    fillColor: Colors.grey.shade200),
+                    fillColor: Color(0xFFFFFFFF)),
               ),
             ),
             Padding(
@@ -123,7 +123,7 @@ class _LoginPageState extends State<loginpage> {
                     filled: true,
                     //errorText: "sdf",
                     labelText: "Password",
-                    fillColor: Colors.grey.shade200),
+                    fillColor: Color(0xFFFFFFFF)),
               ),
             ),
             Padding(
