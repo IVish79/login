@@ -67,10 +67,7 @@ class _loginpageState extends State<loginpage> {
     ),);
   }
 }
-*/               //rey
-
-
-
+*/ //old try
 
 import 'package:flutter/material.dart';
 import 'package:login/registerpage.dart';
@@ -83,7 +80,6 @@ class loginpage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<loginpage> {
-
   TextEditingController temail = TextEditingController();
   TextEditingController tpass = TextEditingController();
 
@@ -106,7 +102,10 @@ class _LoginPageState extends State<loginpage> {
               child: TextField(
                 controller: temail,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(13),
+                            bottomRight: Radius.circular(13))),
                     filled: true,
                     //errorText: "sdf",
                     labelText: "Email or Mobile No.",
@@ -118,7 +117,9 @@ class _LoginPageState extends State<loginpage> {
               child: TextField(
                 controller: temail,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(13),
+                        bottomRight: Radius.circular(13))),
                     filled: true,
                     //errorText: "sdf",
                     labelText: "Password",
@@ -159,6 +160,3 @@ class _LoginPageState extends State<loginpage> {
     );
   }
 }
-
-
-

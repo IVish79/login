@@ -4,5 +4,5 @@ import 'package:login/splash.dart';
 
 void  main()
 {
-  runApp(MaterialApp(home: splash(),));
+  runApp(MaterialApp(home: splash(),debugShowCheckedModeBanner: false,));
 }

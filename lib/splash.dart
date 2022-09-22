@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:login/loginpage.dart';
 
@@ -28,22 +30,40 @@ class _splashState extends State<splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
-            height: 45,
-            width: 100,
-            color: Color(0xFF024887),
-            child: Text(
-              "Loading...",textAlign: TextAlign.center,
-              style: TextStyle(color: Color(0xFFFFFFFF)),
-            )),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        color: Color(0xDF60AE98),
+        child: Center(
+          child: CircularProgressIndicator(
+        backgroundColor: Color(0xFFFFFFFF),
+    valueColor: AlwaysStoppedAnimation(Color(0xFF060505)),
+    strokeWidth: 5,
+        ),
       ),
-    );
+    ));
   }
 }
+/*
+CircularProgressIndicator(
+              backgroundColor: Colors.redAccent,
+              valueColor: AlwaysStoppedAnimation(Colors.green),
+              strokeWidth: 10,
+ */
 
 
+/*
 
+Text(
+
+            "Loading...",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Color(0xFFFFFFFF),
+                fontSize: 20,
+                fontWeight: FontWeight.bold),
+          ),
+ */
 
 
 /*
