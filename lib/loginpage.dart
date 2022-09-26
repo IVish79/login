@@ -94,7 +94,7 @@ class _LoginPageState extends State<loginpage> {
             Container(
               child: Text(
                 "Sign In",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Color(0xDF60AE98)),
               ),
             ),
             Padding(
